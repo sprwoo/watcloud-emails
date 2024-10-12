@@ -1,10 +1,15 @@
 {
-  "name": "watcloud-emails",
-  "version": "0.0.1",
-  "bin": "./dist/cli/index.js",
+  "name": "@watonomous/watcloud-emails",
+  "bin": {
+    "watcloud-emails": "dist/cli/index.js"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "dev": "concurrently --kill-others \"email dev\" \"tsc -w\"",
     "build": "tsc",
-    "dev": "concurrently --kill-others \"email dev\" \"tsc -w\""
+    "prepack": "npm run build"
   },
   "dependencies": {
     "@react-email/components": "0.0.25",
