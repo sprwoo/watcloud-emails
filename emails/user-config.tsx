@@ -7,7 +7,6 @@ import {
     Text
 } from "@react-email/components";
 import { z } from "zod";
-import { getAsset, registerAsset, WATcloudURI } from "../utils/watcloud-uri";
 import { WATcloudEmail } from "./_common/watcloud-email";
 
 const userConfigEmailProps = z.object({

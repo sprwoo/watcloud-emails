@@ -26,6 +26,10 @@ export function WATcloudEmail({
                 /*
                     CSS style block for dark mode
                     Dark mode requires the !important tag to override the default styles
+
+                    This has not been tested in email clients, so it may break.
+
+                    This works on Microsoft Edge but not Google Chrome, so may need to look for alternate methods?
                 */
                     @media (prefers-color-scheme: dark) {
                         body, div {
@@ -62,6 +66,22 @@ export function WATcloudEmail({
                             margin: 40px auto;
                             padding: 20px; 
                             maxWidth: 600px;
+                    }
+                    
+                    /*
+                        There probably is a way to integrate this into where the this button is actually used
+                    */
+                    .confirmation-button {
+                        background-color: #007BFF;
+                        color: #ffffff !important;
+                        padding: 10px 20px;
+                        text-decoration: none;
+                        border-radius: 5px;
+                        font-size: 18px;
+                    }
+                        
+                    .confirmation-button:hover {
+                        background-color: #0056b3;
                     }
                 `}
             </style>
