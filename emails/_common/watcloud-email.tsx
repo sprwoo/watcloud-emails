@@ -22,20 +22,22 @@ export function WATcloudEmail({
         <Html>
             <Head>
             <style>
-            // CSS style block for dark mode
-            // Dark mode requires the !important tag to override the default styles
                 {`
+                /*
+                    CSS style block for dark mode
+                    Dark mode requires the !important tag to override the default styles
+                */
                     @media (prefers-color-scheme: dark) {
                         body, div {
                             background-color: #333 !important;
                             color: #ffffff !important;
                         }
                         code {
-                            background-color:#c9c5c5 !important;
+                            background-color: #c9c5c5 !important;
                         }
 
                         .email-container {
-                            border: 1px solid#696969 !important;
+                            border: 1px solid #696969 !important;
                             border-radius: 5px;
                             margin: 40px auto;
                             padding: 20px; 
