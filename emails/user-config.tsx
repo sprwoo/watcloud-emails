@@ -28,7 +28,7 @@ export function userConfigEmail(props: userConfigEmailProps) {
         <WATcloudEmail previewText={previewText}>
             <Text>Hi {name},</Text>
             <Text>Greetings from WATcloud! Your WATcloud user config edit link is ready for you <Link href={editLink}>here.</Link></Text>
-            <Text>If you have any questions or need assistance, don't hesitate to reach out to your WATcloud contact or the WATcloud team at <a href="mailto:infra-outreach@watonomous.ca\">infra-outreach@watonomous.ca</a>.</Text>
+            <Text>If you have any questions or need assistance, don't hesitate to reach out to your WATcloud contact or the WATcloud team at <Link href="mailto:infra-outreach@watonomous.ca\">infra-outreach@watonomous.ca</Link>.</Text>
             <Text>Vroom vroom, <br></br> WATcloud Team.</Text>
         </WATcloudEmail>
     );
