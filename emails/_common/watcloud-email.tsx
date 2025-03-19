@@ -65,7 +65,7 @@ export function WATcloudEmail({
                             border-radius: 5px;
                             margin: 40px auto;
                             padding: 20px; 
-                            maxWidth: 600px;
+                            max-width: 600px;
                     }
                     
                     /*

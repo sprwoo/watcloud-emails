@@ -32,7 +32,7 @@ export function mailingListEmail(props: mailingListEmailProps) {
         <WATcloudEmail previewText={previewText}>
             <Text>Thanks for signing up for updates from {mailingList}</Text>
             <Text>Please confirm your subscription by clicking the button below. This confirmation email will expire in {CODE_TTL_SEC / 60 / 60} hours. </Text>
-            <Link className="confirmation-button" href="{confirmationURL}">Confirm Subscription</Link>
+            <Link className="confirmation-button" href={confirmationURL}>Confirm Subscription</Link>
             <Text>If the button above does not work, please copy and paste the following URL into your browser</Text>
             <pre>{confirmationURL}</pre>
             <Text>This email was sent to {email}. If you did not request this subscription, no further action is required. You won't be subscribed if you don't click the confirmation link.</Text>
